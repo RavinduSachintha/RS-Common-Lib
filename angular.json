@@ -64,7 +64,8 @@
             "styles": [
               "demo/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/RS-Common-Lib/"
           },
           "configurations": {
             "production": {
