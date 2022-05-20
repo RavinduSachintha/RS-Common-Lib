@@ -1,3 +1,5 @@
+@RavinduSachintha/rs-ng-components
+
 @angular/common
 MIT
 

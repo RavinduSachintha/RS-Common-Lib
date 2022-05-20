@@ -25,9 +25,13 @@ if [ "$1" == "components" ]; then
 fi
 
 if [ "$1" == "demo" ]; then
-    echo "########### Angular Build - Components Library ###########"
+    echo "########### npm install ###########"
     echo
-    npm run build $1 --prod
+    npm i
+
+    echo "########### Angular Build - Demo Project ###########"
+    echo
+    npm run build $1
 
     echo "########### git commit & push ###########"
     echo

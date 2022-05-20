@@ -1,16 +1,10 @@
 import { NgModule } from '@angular/core';
-import { ComponentsComponent } from './components.component';
-
-
+import { PsHeaderComponent } from './ps-header/ps-header.component';
+import { PsFooterComponent } from './ps-footer/ps-footer.component';
 
 @NgModule({
-  declarations: [
-    ComponentsComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    ComponentsComponent
-  ]
+  declarations: [PsHeaderComponent, PsFooterComponent],
+  imports: [],
+  exports: [PsHeaderComponent, PsFooterComponent],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}
