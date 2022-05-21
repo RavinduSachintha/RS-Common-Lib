@@ -56,15 +56,11 @@
             "main": "demo/src/main.ts",
             "polyfills": "demo/src/polyfills.ts",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "demo/src/favicon.ico",
-              "demo/src/assets"
-            ],
-            "styles": [
-              "demo/src/styles.scss"
-            ],
+            "assets": ["demo/src/favicon.ico", "demo/src/assets"],
+            "styles": ["demo/src/styles.scss"],
             "scripts": [],
-            "baseHref": "/RS-Common-Lib/"
+            "baseHref": "/RS-Common-Lib/",
+            "preserveSymlinks": true
           },
           "configurations": {
             "production": {
@@ -127,14 +123,24 @@
             "tsConfig": "demo/tsconfig.spec.json",
             "karmaConfig": "demo/karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "demo/src/favicon.ico",
-              "demo/src/assets"
-            ],
-            "styles": [
-              "demo/src/styles.scss"
-            ],
+            "assets": ["demo/src/favicon.ico", "demo/src/assets"],
+            "styles": ["demo/src/styles.scss"],
             "scripts": []
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "demo:build",
+            "styles": [".storybook/custom-styles.scss"],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "browserTarget": "demo:build",
+            "styles": [".storybook/custom-styles.scss"]
           }
         }
       }

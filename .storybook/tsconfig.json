@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig-publish.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "../demo/src/test.ts",
+    "../demo/src/**/*.spec.ts",
+    "../projects/**/*.spec.ts"
+  ],
+  "include": [
+    "../demo/src/**/*",
+    "../projects/**/*"
+  ],
+  "files": [
+    "./typings.d.ts"
+  ]
+}

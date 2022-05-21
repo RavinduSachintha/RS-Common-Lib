@@ -25,13 +25,21 @@ if [ "$1" == "components" ]; then
 fi
 
 if [ "$1" == "demo" ]; then
+    echo "########### clean docs ###########"
+    echo
+    rm -r ./docs
+
     echo "########### npm install ###########"
     echo
     npm i
 
-    echo "########### Angular Build - Demo Project ###########"
+    echo "########### Angular Storybook Build - Demo Project ###########"
     echo
-    npm run build $1
+    npm run ng -- run demo:build-storybook
+
+    echo "########### move build files to docs ###########"
+    echo
+    mv ./storybook-static ./docs
 
     echo "########### git commit & push ###########"
     echo
