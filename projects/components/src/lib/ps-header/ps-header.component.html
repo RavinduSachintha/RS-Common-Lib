@@ -1,1 +1,20 @@
-<p>ps-header works!</p>
+<header class="header clearfix">
+  <div class="container">
+    <img
+      [src]="imgSrc"
+      class="profile-image img-fluid float-start"
+      alt="{{ name }}"
+    />
+    <div class="profile-content float-start">
+      <h1 class="name">{{ name }}</h1>
+      <h2 class="desc">{{ description }}</h2>
+      <ul class="social list-inline">
+        <li *ngFor="let icon of socialIcons" class="list-inline-item">
+          <a href="{{ icon.url }}" target="_blank">
+            <fa-icon class="svg-inline--fa" [icon]="icon.icon"></fa-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

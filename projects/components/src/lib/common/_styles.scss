@@ -1,0 +1,51 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "./colors";
+@import "./fonts";
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix {
+  & ::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline-block;
+
+  & :not(:last-child) {
+    margin-right: 0.6rem;
+  }
+}
+
+a {
+  color: #3aaa64;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+
+  & :hover {
+    text-decoration: underline;
+  }
+}

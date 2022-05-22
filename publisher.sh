@@ -3,7 +3,7 @@
 if [ "$1" == "components" ]; then
     echo "########### Angular Build - Components Library ###########"
     echo
-    npm run build $1 --prod
+    npm run build:components
 
     echo "########### copy npmrc file to dist directory ###########"
     echo
