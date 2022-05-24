@@ -45,6 +45,10 @@ if [ "$1" == "demo" ]; then
     echo
     npm i
 
+    echo "########### npm version update ###########"
+    echo
+    npm version patch
+
     echo "########### Angular Storybook Build - Demo Project ###########"
     echo
     npm run ng -- run demo:build-storybook
