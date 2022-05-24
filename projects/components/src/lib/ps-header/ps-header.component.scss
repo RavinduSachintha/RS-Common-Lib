@@ -6,8 +6,10 @@
   background: $secondary_white;
   border-top: 10px solid $primary_gray;
 
-  & .profile-image {
-    margin-right: 30px;
+  @include media-breakpoint-up(md) {
+    & .profile-image {
+      margin-right: 30px;
+    }
   }
 
   & img {
