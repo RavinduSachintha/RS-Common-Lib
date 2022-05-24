@@ -1,11 +1,14 @@
 <header class="header clearfix">
-  <div class="container">
+  <div class="container text-md-start text-center">
     <img
+      width="180px"
+      height="180px"
       [src]="imgSrc"
-      class="profile-image img-fluid float-start"
+      class="profile-image img-fluid float-none float-md-start"
       alt="{{ name }}"
     />
-    <div class="profile-content float-start">
+
+    <div class="profile-content float-none float-md-start">
       <h1 class="name">{{ name }}</h1>
       <h2 class="desc">{{ description }}</h2>
       <ul class="social list-inline">
@@ -16,5 +19,13 @@
         </li>
       </ul>
     </div>
+
+    <a
+      class="btn btn-cta-primary float-none float-md-end mt-3 mt-md-5"
+      href=""
+    >
+      <fa-icon class="svg-inline--fa" [icon]="faPaperPlane"></fa-icon>
+      Contact Me
+    </a>
   </div>
 </header>

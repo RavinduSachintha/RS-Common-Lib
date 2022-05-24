@@ -1,6 +1,18 @@
 #!/bin/bash
 
 if [ "$1" == "components" ]; then
+    echo "########### cd to components direcotry ###########"
+    echo
+    cd ./projects/components
+
+    echo "########### npm version update ###########"
+    echo
+    npm version patch
+
+    echo "########### cd to root direcotry ###########"
+    echo
+    cd ../..
+
     echo "########### Angular Build - Components Library ###########"
     echo
     npm run build:components

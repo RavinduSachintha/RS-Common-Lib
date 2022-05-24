@@ -66,7 +66,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<router-outlet></router-outlet>\n<rs-components-ps-header\n  img-src=\"assets/profile.png\"\n  name=\"Ravindu Sachintha\"\n  description=\"Software Engineer\"\n  [social-icons]=\"socialIconList\"\n></rs-components-ps-header>\n"
+            "templateData": "<router-outlet></router-outlet>\n<rs-components-ps-header\n  imgSrc=\"assets/profile_1.jpg\"\n  name=\"Ravindu Sachintha\"\n  description=\"Software Engineer @ CodeGen International\"\n  [socialIcons]=\"socialIconList\"\n></rs-components-ps-header>\n"
         },
         {
             "name": "PsFooterComponent",
@@ -132,7 +132,7 @@
         },
         {
             "name": "PsHeaderComponent",
-            "id": "component-PsHeaderComponent-be999036a4f74a04f48a7159757a8cf71073fd2650d6e833f0ea48ced00ebfabb0c8f1accea0024945865629626867883a175bbe53a0491ed1abb7bdba09229e",
+            "id": "component-PsHeaderComponent-af7692fee89f61577d21331c4b6e5e463ba294fad9765c9864fba067ea6b5f7b84f4f6282c40d47ca1411e0a3b95f1512d0281f693fb213716c885601e3f1cf9",
             "file": "projects/components/src/lib/ps-header/ps-header.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -153,20 +153,12 @@
                     "name": "description",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "line": 13,
                     "type": "string",
                     "decorators": []
                 },
                 {
-                    "name": "img-src",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 10,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "name",
+                    "name": "imgSrc",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 11,
@@ -174,16 +166,35 @@
                     "decorators": []
                 },
                 {
-                    "name": "social-icons",
+                    "name": "name",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "socialIcons",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
                     "type": "SocialIcon[]",
                     "decorators": []
                 }
             ],
             "outputsClass": [],
-            "propertiesClass": [],
+            "propertiesClass": [
+                {
+                    "name": "faPaperPlane",
+                    "defaultValue": "faPaperPlane",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
             "methodsClass": [
                 {
                     "name": "ngOnInit",
@@ -191,7 +202,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17,
+                    "line": 20,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -203,11 +214,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { SocialIcon } from './social-icons.type';\n\n@Component({\n  selector: 'rs-components-ps-header',\n  templateUrl: './ps-header.component.html',\n  styleUrls: ['./ps-header.component.scss'],\n})\nexport class PsHeaderComponent implements OnInit {\n  @Input('img-src') imgSrc?: string;\n  @Input('name') name?: string;\n  @Input('description') description?: string;\n  @Input('social-icons') socialIcons?: SocialIcon[];\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { faPaperPlane } from '@fortawesome/free-solid-svg-icons';\nimport { SocialIcon } from './social-icons.type';\n\n@Component({\n  selector: 'rs-components-ps-header',\n  templateUrl: './ps-header.component.html',\n  styleUrls: ['./ps-header.component.scss'],\n})\nexport class PsHeaderComponent implements OnInit {\n  @Input() imgSrc?: string;\n  @Input() name?: string;\n  @Input() description?: string;\n  @Input() socialIcons?: SocialIcon[];\n\n  faPaperPlane = faPaperPlane;\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../common/colors\";\n@import \"../common/styles\";\n\n.header {\n  padding: 30px 0;\n  background: $secondary_white;\n  border-top: 10px solid $primary_gray;\n\n  & .profile-image {\n    margin-right: 30px;\n  }\n\n  & img {\n    vertical-align: middle;\n    border-style: none;\n  }\n\n  & .profile-content {\n    display: block;\n\n    & .name {\n      color: $secondary_gray;\n      font-size: 38px;\n      margin-bottom: 5px;\n      margin-top: 30px;\n    }\n\n    & .desc {\n      color: #778492;\n      font-family: \"Lato\", arial, sans-serif;\n      font-weight: 400;\n      font-size: 24px;\n      margin-top: 0;\n      margin-bottom: 15px;\n    }\n  }\n\n  & .social a {\n    background: $ternary_gray;\n    width: 36px;\n    height: 36px;\n    display: inline-block;\n    -webkit-border-radius: 50%;\n    -moz-border-radius: 50%;\n    -ms-border-radius: 50%;\n    -o-border-radius: 50%;\n    border-radius: 50%;\n    color: $primary_white;\n    text-align: center;\n\n    &:hover {\n      background: $primary_gray;\n    }\n\n    & .svg-inline--fa {\n      font-size: 20px;\n      margin-top: 7px;\n      display: inline-block;\n      height: 1em;\n    }\n  }\n}\n",
+                    "data": "@import \"../common/colors\";\n@import \"../common/styles\";\n\n.header {\n  padding: 30px 0;\n  background: $secondary_white;\n  border-top: 10px solid $primary_gray;\n\n  & .profile-image {\n    margin-right: 30px;\n  }\n\n  & img {\n    vertical-align: middle;\n    border-style: none;\n    border-radius: 50%;\n    border: 2px solid $primary_gray;\n    box-shadow:0px 0px 10px 10px $secondary_gray inset;\n    box-shadow:0px 2px 10px 2px $light_gray;\n  }\n\n  & .profile-content {\n    display: block;\n\n    & .name {\n      color: $secondary_gray;\n      font-size: 38px;\n      margin-bottom: 5px;\n      margin-top: 30px;\n    }\n\n    & .desc {\n      color: #778492;\n      font-family: \"Lato\", arial, sans-serif;\n      font-weight: 400;\n      font-size: 24px;\n      margin-top: 0;\n      margin-bottom: 15px;\n    }\n  }\n\n  & .social a {\n    background: $ternary_gray;\n    width: 36px;\n    height: 36px;\n    display: inline-block;\n    -webkit-border-radius: 50%;\n    -moz-border-radius: 50%;\n    -ms-border-radius: 50%;\n    -o-border-radius: 50%;\n    border-radius: 50%;\n    color: $primary_white;\n    text-align: center;\n\n    &:hover {\n      background: $primary_gray;\n    }\n\n    & .svg-inline--fa {\n      font-size: 20px;\n      margin-top: 7px;\n      display: inline-block;\n      height: 1em;\n    }\n  }\n\n  & a.btn {\n    -webkit-transition: all 0.3s ease-in-out;\n    -moz-transition: all 0.3s ease-in-out;\n    -ms-transition: all 0.3s ease-in-out;\n    -o-transition: all 0.3s ease-in-out;\n    transition: all 0.3s ease-in-out;\n    font-family: \"Montserrat\", arial, sans-serif;\n    padding: 8px 16px;\n\n    & .svg-inline--fa {\n      margin-right: 5px;\n      position: relative;\n      top: -2px;\n      display: inline-block;\n      font-size: inherit;\n      height: 1em;\n      vertical-align: -0.125em;\n    }\n  }\n\n  & .btn-cta-primary {\n    background: $primary_green;\n    border: 1px solid $primary_green;\n    color: $primary_white;\n    font-weight: 600;\n    text-transform: uppercase;\n  }\n}\n",
                     "styleUrl": "./ps-header.component.scss"
                 }
             ],
@@ -218,12 +229,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 13
+                "line": 16
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<header class=\"header clearfix\">\n  <div class=\"container\">\n    <img\n      [src]=\"imgSrc\"\n      class=\"profile-image img-fluid float-start\"\n      alt=\"{{ name }}\"\n    />\n    <div class=\"profile-content float-start\">\n      <h1 class=\"name\">{{ name }}</h1>\n      <h2 class=\"desc\">{{ description }}</h2>\n      <ul class=\"social list-inline\">\n        <li *ngFor=\"let icon of socialIcons\" class=\"list-inline-item\">\n          <a href=\"{{ icon.url }}\" target=\"_blank\">\n            <fa-icon class=\"svg-inline--fa\" [icon]=\"icon.icon\"></fa-icon>\n          </a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</header>\n"
+            "templateData": "<header class=\"header clearfix\">\n  <div class=\"container text-md-start text-center\">\n    <img\n      width=\"180px\"\n      height=\"180px\"\n      [src]=\"imgSrc\"\n      class=\"profile-image img-fluid float-none float-md-start\"\n      alt=\"{{ name }}\"\n    />\n\n    <div class=\"profile-content float-none float-md-start\">\n      <h1 class=\"name\">{{ name }}</h1>\n      <h2 class=\"desc\">{{ description }}</h2>\n      <ul class=\"social list-inline\">\n        <li *ngFor=\"let icon of socialIcons\" class=\"list-inline-item\">\n          <a href=\"{{ icon.url }}\" target=\"_blank\">\n            <fa-icon class=\"svg-inline--fa\" [icon]=\"icon.icon\"></fa-icon>\n          </a>\n        </li>\n      </ul>\n    </div>\n\n    <a\n      class=\"btn btn-cta-primary float-none float-md-end mt-3 mt-md-5\"\n      href=\"\"\n    >\n      <fa-icon class=\"svg-inline--fa\" [icon]=\"faPaperPlane\"></fa-icon>\n      Contact Me\n    </a>\n  </div>\n</header>\n"
         }
     ],
     "modules": [
@@ -395,14 +406,14 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
-                "name": "Primary",
+                "name": "psHeader",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "demo/src/stories/PsHeader.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "() => ({\n  props: {\n    label: 'Header',\n    primary: true,\n  },\n})"
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "require",
@@ -412,6 +423,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "demo/src/stories/PsHeader.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<PsHeaderComponent>",
+                "defaultValue": "(args: PsHeaderComponent) => ({\n  component: PsHeaderComponent,\n  template: `\n  <rs-components-ps-header\n    [imgSrc]=\"imgSrc\"\n    [name]=\"name\"\n    [description]=\"description\"\n    [socialIcons]=\"socialIconList\">\n  </rs-components-ps-header>\n  `,\n  props: args\n})"
             }
         ],
         "functions": [],
@@ -477,14 +498,24 @@
             ],
             "demo/src/stories/PsHeader.stories.ts": [
                 {
-                    "name": "Primary",
+                    "name": "psHeader",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "demo/src/stories/PsHeader.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "() => ({\n  props: {\n    label: 'Header',\n    primary: true,\n  },\n})"
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "demo/src/stories/PsHeader.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<PsHeaderComponent>",
+                    "defaultValue": "(args: PsHeaderComponent) => ({\n  component: PsHeaderComponent,\n  template: `\n  <rs-components-ps-header\n    [imgSrc]=\"imgSrc\"\n    [name]=\"name\"\n    [description]=\"description\"\n    [socialIcons]=\"socialIconList\">\n  </rs-components-ps-header>\n  `,\n  props: args\n})"
                 }
             ]
         },
@@ -558,7 +589,17 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary",
+                "name": "psHeader",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "demo/src/stories/PsHeader.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -578,7 +619,7 @@
                 "linktype": "component",
                 "name": "PsHeaderComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/7",
+                "coverageCount": "0/8",
                 "status": "low"
             },
             {

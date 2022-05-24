@@ -11,7 +11,8 @@
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook",
-    "build:scss": "scss-bundle -p scss-bundle.config.json"
+    "build:scss": "scss-bundle -p scss-bundle.config.json",
+    "ng-storybook": "ng run demo:storybook"
   },
   "private": false,
   "dependencies": {
@@ -28,7 +29,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.0",
     "@fortawesome/free-regular-svg-icons": "^6.1.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
-    "@ravindusachintha/rs-ng-components": "^0.0.1",
+    "@ravindusachintha/rs-ng-components": "^0.0.2",
     "autoprefixer": "10.4.5",
     "bootstrap": "^5.1.3",
     "rxjs": "~7.5.0",

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { SocialIcon } from './social-icons.type';
 
 @Component({
@@ -7,10 +8,12 @@ import { SocialIcon } from './social-icons.type';
   styleUrls: ['./ps-header.component.scss'],
 })
 export class PsHeaderComponent implements OnInit {
-  @Input('img-src') imgSrc?: string;
-  @Input('name') name?: string;
-  @Input('description') description?: string;
-  @Input('social-icons') socialIcons?: SocialIcon[];
+  @Input() imgSrc?: string;
+  @Input() name?: string;
+  @Input() description?: string;
+  @Input() socialIcons?: SocialIcon[];
+
+  faPaperPlane = faPaperPlane;
 
   constructor() {}
 

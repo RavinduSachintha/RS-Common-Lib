@@ -13,6 +13,10 @@
   & img {
     vertical-align: middle;
     border-style: none;
+    border-radius: 50%;
+    border: 2px solid $primary_gray;
+    box-shadow:0px 0px 10px 10px $secondary_gray inset;
+    box-shadow:0px 2px 10px 2px $light_gray;
   }
 
   & .profile-content {
@@ -58,5 +62,33 @@
       display: inline-block;
       height: 1em;
     }
+  }
+
+  & a.btn {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-family: "Montserrat", arial, sans-serif;
+    padding: 8px 16px;
+
+    & .svg-inline--fa {
+      margin-right: 5px;
+      position: relative;
+      top: -2px;
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      vertical-align: -0.125em;
+    }
+  }
+
+  & .btn-cta-primary {
+    background: $primary_green;
+    border: 1px solid $primary_green;
+    color: $primary_white;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }
