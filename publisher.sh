@@ -45,10 +45,6 @@ if [ "$1" == "demo" ]; then
     echo
     npm i
 
-    echo "########### npm version update ###########"
-    echo
-    npm version patch
-
     echo "########### Angular Storybook Build - Demo Project ###########"
     echo
     npm run ng -- run demo:build-storybook
@@ -57,10 +53,17 @@ if [ "$1" == "demo" ]; then
     echo
     mv ./storybook-static ./docs
 
-    echo "########### git commit & push ###########"
+    echo "########### git commit ###########"
     echo
     git add .
     git commit -m "publishing demo project"
+
+    echo "########### npm version update ###########"
+    echo
+    npm version patch
+
+    echo "########### git push ###########"
+    echo
     git push origin main
 
     echo "########### everthing sucess ###########"
