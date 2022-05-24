@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-c4a96b81b5bb79cf2fb2ff650c43459000eb34876f4f08500357da5774ca673fedab0cf93e6dfdc3d64d65e56afd78f8ef72046fe156b2afbb84ef8a91b8007c",
+            "id": "component-AppComponent-a6975a6768bd8953ff68738a4db59c692b847155da996f316ec1a17a7a5647211188b6322fc174cf1b3fdf36efc18dfb79dff07456c45d7f657dab3ff701dd83",
             "file": "demo/src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -29,6 +29,16 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
+                    "name": "socialIconList",
+                    "defaultValue": "[\n    {\n      url: 'https://www.linkedin.com/in/ravindu-sachintha/',\n      icon: faLinkedinIn,\n    },\n    {\n      url: 'https://github.com/RavinduSachintha',\n      icon: faGithubAlt,\n    },\n    {\n      url: 'https://gitlab.com/Sachintha96',\n      icon: faGitlab,\n    },\n    {\n      url: 'https://stackoverflow.com/users/7483559/ravindu-sachintha',\n      icon: faStackOverflow,\n    },\n    {\n      url: 'https://twitter.com/RSachintha96',\n      icon: faTwitter,\n    },\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SocialIcon[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
                     "name": "title",
                     "defaultValue": "'demo'",
                     "deprecated": false,
@@ -36,7 +46,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 9
+                    "line": 17
                 }
             ],
             "methodsClass": [],
@@ -47,7 +57,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'demo';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { SocialIcon } from '@ravindusachintha/rs-ng-components';\nimport {\n  faLinkedinIn,\n  faGithubAlt,\n  faGitlab,\n  faStackOverflow,\n  faTwitter,\n} from '@fortawesome/free-brands-svg-icons';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n})\nexport class AppComponent {\n  title = 'demo';\n  socialIconList: SocialIcon[] = [\n    {\n      url: 'https://www.linkedin.com/in/ravindu-sachintha/',\n      icon: faLinkedinIn,\n    },\n    {\n      url: 'https://github.com/RavinduSachintha',\n      icon: faGithubAlt,\n    },\n    {\n      url: 'https://gitlab.com/Sachintha96',\n      icon: faGitlab,\n    },\n    {\n      url: 'https://stackoverflow.com/users/7483559/ravindu-sachintha',\n      icon: faStackOverflow,\n    },\n    {\n      url: 'https://twitter.com/RSachintha96',\n      icon: faTwitter,\n    },\n  ];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -56,7 +66,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<router-outlet></router-outlet>\n<rs-components-ps-header></rs-components-ps-header>"
+            "templateData": "<router-outlet></router-outlet>\n<rs-components-ps-header\n  img-src=\"assets/profile.png\"\n  name=\"Ravindu Sachintha\"\n  description=\"Software Engineer\"\n  [social-icons]=\"socialIconList\"\n></rs-components-ps-header>\n"
         },
         {
             "name": "PsFooterComponent",
@@ -122,7 +132,7 @@
         },
         {
             "name": "PsHeaderComponent",
-            "id": "component-PsHeaderComponent-d380a7b1430d9b99889b3d45e3198771a18bd1e5d1927431996f770765cd341e4fd8c93cc07d6d96a74d856851063a79dba8a176785fa397a1485c25ebfad1be",
+            "id": "component-PsHeaderComponent-be999036a4f74a04f48a7159757a8cf71073fd2650d6e833f0ea48ced00ebfabb0c8f1accea0024945865629626867883a175bbe53a0491ed1abb7bdba09229e",
             "file": "projects/components/src/lib/ps-header/ps-header.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -138,7 +148,40 @@
                 "./ps-header.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "description",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "img-src",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "social-icons",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "SocialIcon[]",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [
@@ -148,7 +191,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 12,
+                    "line": 17,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -160,11 +203,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'rs-components-ps-header',\n  templateUrl: './ps-header.component.html',\n  styleUrls: ['./ps-header.component.scss']\n})\nexport class PsHeaderComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { SocialIcon } from './social-icons.type';\n\n@Component({\n  selector: 'rs-components-ps-header',\n  templateUrl: './ps-header.component.html',\n  styleUrls: ['./ps-header.component.scss'],\n})\nexport class PsHeaderComponent implements OnInit {\n  @Input('img-src') imgSrc?: string;\n  @Input('name') name?: string;\n  @Input('description') description?: string;\n  @Input('social-icons') socialIcons?: SocialIcon[];\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": "@import \"../common/colors\";\n@import \"../common/styles\";\n\n.header {\n  padding: 30px 0;\n  background: $secondary_white;\n  border-top: 10px solid $primary_gray;\n\n  & .profile-image {\n    margin-right: 30px;\n  }\n\n  & img {\n    vertical-align: middle;\n    border-style: none;\n  }\n\n  & .profile-content {\n    display: block;\n\n    & .name {\n      color: $secondary_gray;\n      font-size: 38px;\n      margin-bottom: 5px;\n      margin-top: 30px;\n    }\n\n    & .desc {\n      color: #778492;\n      font-family: \"Lato\", arial, sans-serif;\n      font-weight: 400;\n      font-size: 24px;\n      margin-top: 0;\n      margin-bottom: 15px;\n    }\n  }\n\n  & .social a {\n    background: $ternary_gray;\n    width: 36px;\n    height: 36px;\n    display: inline-block;\n    -webkit-border-radius: 50%;\n    -moz-border-radius: 50%;\n    -ms-border-radius: 50%;\n    -o-border-radius: 50%;\n    border-radius: 50%;\n    color: $primary_white;\n    text-align: center;\n\n    &:hover {\n      background: $primary_gray;\n    }\n\n    & .svg-inline--fa {\n      font-size: 20px;\n      margin-top: 7px;\n      display: inline-block;\n      height: 1em;\n    }\n  }\n}\n",
                     "styleUrl": "./ps-header.component.scss"
                 }
             ],
@@ -175,24 +218,24 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 8
+                "line": 13
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<p>ps-header works!</p>\n"
+            "templateData": "<header class=\"header clearfix\">\n  <div class=\"container\">\n    <img\n      [src]=\"imgSrc\"\n      class=\"profile-image img-fluid float-start\"\n      alt=\"{{ name }}\"\n    />\n    <div class=\"profile-content float-start\">\n      <h1 class=\"name\">{{ name }}</h1>\n      <h2 class=\"desc\">{{ description }}</h2>\n      <ul class=\"social list-inline\">\n        <li *ngFor=\"let icon of socialIcons\" class=\"list-inline-item\">\n          <a href=\"{{ icon.url }}\" target=\"_blank\">\n            <fa-icon class=\"svg-inline--fa\" [icon]=\"icon.icon\"></fa-icon>\n          </a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</header>\n"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-c0cc69cf8e0cd692b1e8186c5498425cf872aa8a40036c98035295dbc125b8c5e0c65df3743fb55527cdf6f1780235a609737f45cd2153f183dd1d6664598731",
+            "id": "module-AppModule-6b1df73f65b873f90bf98dd38fdfeb3e70fb85786ac827fe471e4e29a4a46331c30aa953ea4d3c3db12f2ba967a07f5db6e67331b12dbcf1b39f3dfe9193f2b5",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "demo/src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\nimport { ComponentsModule } from '@ravindusachintha/rs-ng-components';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    ComponentsModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\nimport { ComponentsModule } from '@ravindusachintha/rs-ng-components';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    ComponentsModule,\n    FontAwesomeModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -270,13 +313,13 @@
         },
         {
             "name": "ComponentsModule",
-            "id": "module-ComponentsModule-c7978a5775e5b020d0cdd5bbd676c726681c91efc409aee814ceb3d57b98419d0c956818734a4afc5e2c9bbce157d901e747a25932dfe478c435eff564b0b945",
+            "id": "module-ComponentsModule-1bc15f321fd0bc1c07f6e989521cf204d027a1ff967888ca2d3786c32c4709f41b4389de612761e4dee5db90f6a110ebe947d11235aad69c05cb5d280860c156",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/components/src/lib/components.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { PsHeaderComponent } from './ps-header/ps-header.component';\nimport { PsFooterComponent } from './ps-footer/ps-footer.component';\n\n@NgModule({\n  declarations: [PsHeaderComponent, PsFooterComponent],\n  imports: [],\n  exports: [PsHeaderComponent, PsFooterComponent],\n})\nexport class ComponentsModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\n\nimport { PsHeaderComponent } from './ps-header/ps-header.component';\nimport { PsFooterComponent } from './ps-footer/ps-footer.component';\nimport { CommonModule } from '@angular/common';\n\n@NgModule({\n  declarations: [PsHeaderComponent, PsFooterComponent],\n  imports: [CommonModule, FontAwesomeModule],\n  exports: [PsHeaderComponent, PsFooterComponent],\n})\nexport class ComponentsModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -372,7 +415,19 @@
             }
         ],
         "functions": [],
-        "typealiases": [],
+        "typealiases": [
+            {
+                "name": "SocialIcon",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "literal type",
+                "file": "projects/components/src/lib/ps-header/social-icons.type.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 181
+            }
+        ],
         "enumerations": [],
         "groupedVariables": {
             "projects/components/src/test.ts": [
@@ -435,7 +490,21 @@
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
-        "groupedTypeAliases": {}
+        "groupedTypeAliases": {
+            "projects/components/src/lib/ps-header/social-icons.type.ts": [
+                {
+                    "name": "SocialIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "projects/components/src/lib/ps-header/social-icons.type.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 181
+                }
+            ]
+        }
     },
     "routes": {
         "name": "<root>",
@@ -461,7 +530,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -509,7 +578,7 @@
                 "linktype": "component",
                 "name": "PsHeaderComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/7",
                 "status": "low"
             },
             {

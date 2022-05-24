@@ -15,7 +15,7 @@ if [ "$1" == "components" ]; then
 
     echo "########### publish to NPM registry ###########"
     echo
-    npm publish
+    npm publish --registry=https://npm.pkg.github.com/
 
     echo "########### delete npmrc from dist directory ###########"
     echo
@@ -44,7 +44,8 @@ if [ "$1" == "demo" ]; then
     echo "########### git commit & push ###########"
     echo
     git add .
-    git commit -m "publishing demo project"
+    version=$(npm pkg get version | sed -e 's/^"//' -e 's/"$//')
+    git commit -m "publishing demo project v$version"
     git push origin main
 
     echo "########### everthing sucess ###########"
