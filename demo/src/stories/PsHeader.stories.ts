@@ -34,17 +34,6 @@ export default {
       ],
     }),
   ],
-  argTypes: {
-    'img-src': String,
-    name: String,
-    description: String,
-    'social-icons': [
-      {
-        url: String,
-        icon: faLinkedinIn
-      }
-    ]
-  }
 } as Meta;
 
 const Template: Story<PsHeaderComponent> = (args: PsHeaderComponent) => ({
@@ -54,10 +43,10 @@ const Template: Story<PsHeaderComponent> = (args: PsHeaderComponent) => ({
     [imgSrc]="imgSrc"
     [name]="name"
     [description]="description"
-    [socialIcons]="socialIconList">
+    [socialIcons]="socialIcons">
   </rs-components-ps-header>
   `,
-  props: args
+  props: args,
 });
 
 export const psHeader = Template.bind({});
@@ -65,42 +54,19 @@ export const psHeader = Template.bind({});
 psHeader.args = {
   imgSrc: 'assets/profile_1.jpg',
   name: 'Ravindu Sachintha',
-  description: 'Software Engineer @ CodeGen International',
+  description: 'Software Engineer',
   socialIcons: [
     {
-      url: 'https://www.linkedin.com/in/ravindu-sachintha/',
+      url: '',
       icon: faLinkedinIn,
     },
     {
-      url: 'https://github.com/RavinduSachintha',
+      url: '',
       icon: faGithubAlt,
     },
     {
-      url: 'https://gitlab.com/Sachintha96',
+      url: '',
       icon: faGitlab,
     },
   ],
 };
-
-// export const psHeader = () => ({
-//   template: `
-//   <rs-components-ps-header
-//     [img-src]="imgSrc"
-//     [name]="name"
-//     [description]="description"
-//     [social-icons]="socialIconList">
-//   </rs-components-ps-header>
-//   `,
-//   // Provide the icons as props:
-//   props: {
-//     imgSrc: 'assets/profile_1.jpg',
-//     name: 'Ravindu Sachintha',
-//     description: 'Software Engineer @ CodeGen International',
-//     'social-icons': [
-//       {
-//         url: '',
-//         icon: faLinkedinIn
-//       }
-//     ]
-//   },
-// });

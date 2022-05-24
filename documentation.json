@@ -432,7 +432,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<PsHeaderComponent>",
-                "defaultValue": "(args: PsHeaderComponent) => ({\n  component: PsHeaderComponent,\n  template: `\n  <rs-components-ps-header\n    [imgSrc]=\"imgSrc\"\n    [name]=\"name\"\n    [description]=\"description\"\n    [socialIcons]=\"socialIconList\">\n  </rs-components-ps-header>\n  `,\n  props: args\n})"
+                "defaultValue": "(args: PsHeaderComponent) => ({\n  component: PsHeaderComponent,\n  template: `\n  <rs-components-ps-header\n    [imgSrc]=\"imgSrc\"\n    [name]=\"name\"\n    [description]=\"description\"\n    [socialIcons]=\"socialIcons\">\n  </rs-components-ps-header>\n  `,\n  props: args,\n})"
             }
         ],
         "functions": [],
@@ -515,7 +515,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<PsHeaderComponent>",
-                    "defaultValue": "(args: PsHeaderComponent) => ({\n  component: PsHeaderComponent,\n  template: `\n  <rs-components-ps-header\n    [imgSrc]=\"imgSrc\"\n    [name]=\"name\"\n    [description]=\"description\"\n    [socialIcons]=\"socialIconList\">\n  </rs-components-ps-header>\n  `,\n  props: args\n})"
+                    "defaultValue": "(args: PsHeaderComponent) => ({\n  component: PsHeaderComponent,\n  template: `\n  <rs-components-ps-header\n    [imgSrc]=\"imgSrc\"\n    [name]=\"name\"\n    [description]=\"description\"\n    [socialIcons]=\"socialIcons\">\n  </rs-components-ps-header>\n  `,\n  props: args,\n})"
                 }
             ]
         },
