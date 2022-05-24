@@ -60,8 +60,7 @@ if [ "$1" == "demo" ]; then
     echo "########### git commit & push ###########"
     echo
     git add .
-    version=$(npm pkg get version | sed -e 's/^"//' -e 's/"$//')
-    git commit -m "publishing demo project v$version"
+    git commit -m "publishing demo project"
     git push origin main
 
     echo "########### everthing sucess ###########"
