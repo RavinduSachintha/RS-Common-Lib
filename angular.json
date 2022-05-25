@@ -134,7 +134,13 @@
             "browserTarget": "demo:build",
             "styles": [".storybook/custom-styles.scss"],
             "port": 6006
-          }
+          },
+          "configurations": {
+            "development": {
+              "tsConfig": "demo/tsconfig.app.json"
+            }
+          },
+          "defaultConfiguration": "development"
         },
         "build-storybook": {
           "builder": "@storybook/angular:build-storybook",

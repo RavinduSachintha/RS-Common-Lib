@@ -51,8 +51,11 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    color: $primary_white;
     text-align: center;
+
+    & * {
+      color: $primary_white;
+    }
 
     &:hover {
       background: $primary_gray;
@@ -60,7 +63,7 @@
 
     & .svg-inline--fa {
       font-size: 20px;
-      margin-top: 7px;
+      margin-top: 5px;
       display: inline-block;
       height: 1em;
     }
@@ -89,8 +92,12 @@
   & .btn-cta-primary {
     background: $primary_green;
     border: 1px solid $primary_green;
-    color: $primary_white;
+    color: $primary_white !important;
     font-weight: 600;
     text-transform: uppercase;
+
+    & * {
+      color: $primary_white;
+    }
   }
 }

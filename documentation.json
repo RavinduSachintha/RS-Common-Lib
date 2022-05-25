@@ -66,7 +66,396 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<router-outlet></router-outlet>\n<rs-components-ps-header\n  imgSrc=\"assets/profile_1.jpg\"\n  name=\"Ravindu Sachintha\"\n  description=\"Software Engineer @ CodeGen International\"\n  [socialIcons]=\"socialIconList\"\n></rs-components-ps-header>\n"
+            "templateData": "<router-outlet></router-outlet>\n<rs-components-ps-header\n  imgSrc=\"assets/profile_1.jpg\"\n  name=\"Ravindu Sachintha\"\n  description=\"Software Engineer @ CodeGen International\"\n  [socialIcons]=\"socialIconList\"\n></rs-components-ps-header>\n<br />\n\n<rs-components-ps-content-text\n  sectionTitle=\"About Me\"\n  contentText=\"I am a fast learner, a flexible team worker and a friendly character who\nseeks knowledge and experience in the field of Computer Science. Also an\noutgoing personality with good communication and project management\nskills. I’m interested in web / software application development and\nresearch areas such as Distributed Computing, Blockchain, Machine\nLearning, and Natural Language Processing.\"\n></rs-components-ps-content-text>\n"
+        },
+        {
+            "name": "PsContentCarouselComponent",
+            "id": "component-PsContentCarouselComponent-788ab0676db2ee68c2c15ed533646975c8a94df862b7feb416b4b531f78ec77c253f259c00e7596dc719afcb0a777e9f2f65ad979a47e9f7b3dc3996cd7c3ec6",
+            "file": "projects/components/src/lib/ps-content-carousel/ps-content-carousel.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "rs-components-ps-content-carousel",
+            "styleUrls": [
+                "./ps-content-carousel.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ps-content-carousel.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'rs-components-ps-content-carousel',\n  templateUrl: './ps-content-carousel.component.html',\n  styleUrls: ['./ps-content-carousel.component.scss']\n})\nexport class PsContentCarouselComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./ps-content-carousel.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>ps-content-carousel works!</p>\n"
+        },
+        {
+            "name": "PsContentFeatureProjectsComponent",
+            "id": "component-PsContentFeatureProjectsComponent-322e775d1f079d0eac0ffa16b86cbfee6965a6314c6760a7e35a0ff7ba85de0c642b9e9a536c5a3c3567abd92206acc16e29b7bb8e2e50eb7a7f6935d9dfec50",
+            "file": "projects/components/src/lib/ps-content-feature-projects/ps-content-feature-projects.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "rs-components-ps-content-feature-projects",
+            "styleUrls": [
+                "./ps-content-feature-projects.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ps-content-feature-projects.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'rs-components-ps-content-feature-projects',\n  templateUrl: './ps-content-feature-projects.component.html',\n  styleUrls: ['./ps-content-feature-projects.component.scss']\n})\nexport class PsContentFeatureProjectsComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./ps-content-feature-projects.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>ps-content-feature-projects works!</p>\n"
+        },
+        {
+            "name": "PsContentOtherProjectsComponent",
+            "id": "component-PsContentOtherProjectsComponent-70fc13a3a3b0099a908769852fc56f9a5f001bb9cb41759feac9e0a0b480e0c27f562adbb818ad972ddfd07836972c23c25d8b05fa4187573f1874ea8690a34b",
+            "file": "projects/components/src/lib/ps-content-other-projects/ps-content-other-projects.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "rs-components-ps-content-other-projects",
+            "styleUrls": [
+                "./ps-content-other-projects.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ps-content-other-projects.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'rs-components-ps-content-other-projects',\n  templateUrl: './ps-content-other-projects.component.html',\n  styleUrls: ['./ps-content-other-projects.component.scss']\n})\nexport class PsContentOtherProjectsComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./ps-content-other-projects.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>ps-content-other-projects works!</p>\n"
+        },
+        {
+            "name": "PsContentSkillsComponent",
+            "id": "component-PsContentSkillsComponent-bbacfaf1f4612c75c8276eaf2b9a0bd20ed1c7382d4b799e9ea99a10f44739011e0e7edd730f2c4fb51659491d64e922e58bfe1ee1c13fcecefb2f95e4c0933f",
+            "file": "projects/components/src/lib/ps-content-skills/ps-content-skills.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "rs-components-ps-content-skills",
+            "styleUrls": [
+                "./ps-content-skills.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ps-content-skills.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'rs-components-ps-content-skills',\n  templateUrl: './ps-content-skills.component.html',\n  styleUrls: ['./ps-content-skills.component.scss']\n})\nexport class PsContentSkillsComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./ps-content-skills.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>ps-content-skills works!</p>\n"
+        },
+        {
+            "name": "PsContentTextComponent",
+            "id": "component-PsContentTextComponent-24435a884f07b3760542befe64e48f8189bcfcfd43dee803686ed923a53c9cbf7335c294cc45af27b09791f4b711a83f90fc2031db26355e94c95f9b923f7e4e",
+            "file": "projects/components/src/lib/ps-content-text/ps-content-text.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "rs-components-ps-content-text",
+            "styleUrls": [
+                "./ps-content-text.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ps-content-text.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "contentText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "sectionTitle",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'rs-components-ps-content-text',\n  templateUrl: './ps-content-text.component.html',\n  styleUrls: ['./ps-content-text.component.scss']\n})\nexport class PsContentTextComponent implements OnInit {\n\n  @Input() sectionTitle?: string;\n  @Input() contentText?: string;\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../common/colors\";\n@import \"../common/styles\";",
+                    "styleUrl": "./ps-content-text.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<section class=\"section\">\n  <div class=\"section-inner\">\n    <h2 class=\"heading\">{{ sectionTitle }}</h2>\n    <div class=\"content\">\n      <p>{{ contentText }}</p>\n    </div>\n  </div>\n</section>\n"
+        },
+        {
+            "name": "PsContentTextListComponent",
+            "id": "component-PsContentTextListComponent-b4434f59fad5a03b54003d08f6fcaf47c5788b7f3a4d146a7491644cb3b817c96a315a19d6b8bd737afb2eef2582906be8c289fd14f6e77470d4b0dff6ac6926",
+            "file": "projects/components/src/lib/ps-content-text-list/ps-content-text-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "rs-components-ps-content-text-list",
+            "styleUrls": [
+                "./ps-content-text-list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ps-content-text-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'rs-components-ps-content-text-list',\n  templateUrl: './ps-content-text-list.component.html',\n  styleUrls: ['./ps-content-text-list.component.scss']\n})\nexport class PsContentTextListComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./ps-content-text-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>ps-content-text-list works!</p>\n"
         },
         {
             "name": "PsFooterComponent",
@@ -218,7 +607,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../common/colors\";\n@import \"../common/styles\";\n\n.header {\n  padding: 30px 0;\n  background: $secondary_white;\n  border-top: 10px solid $primary_gray;\n\n  & .profile-image {\n    margin-right: 30px;\n  }\n\n  & img {\n    vertical-align: middle;\n    border-style: none;\n    border-radius: 50%;\n    border: 2px solid $primary_gray;\n    box-shadow:0px 0px 10px 10px $secondary_gray inset;\n    box-shadow:0px 2px 10px 2px $light_gray;\n  }\n\n  & .profile-content {\n    display: block;\n\n    & .name {\n      color: $secondary_gray;\n      font-size: 38px;\n      margin-bottom: 5px;\n      margin-top: 30px;\n    }\n\n    & .desc {\n      color: #778492;\n      font-family: \"Lato\", arial, sans-serif;\n      font-weight: 400;\n      font-size: 24px;\n      margin-top: 0;\n      margin-bottom: 15px;\n    }\n  }\n\n  & .social a {\n    background: $ternary_gray;\n    width: 36px;\n    height: 36px;\n    display: inline-block;\n    -webkit-border-radius: 50%;\n    -moz-border-radius: 50%;\n    -ms-border-radius: 50%;\n    -o-border-radius: 50%;\n    border-radius: 50%;\n    color: $primary_white;\n    text-align: center;\n\n    &:hover {\n      background: $primary_gray;\n    }\n\n    & .svg-inline--fa {\n      font-size: 20px;\n      margin-top: 7px;\n      display: inline-block;\n      height: 1em;\n    }\n  }\n\n  & a.btn {\n    -webkit-transition: all 0.3s ease-in-out;\n    -moz-transition: all 0.3s ease-in-out;\n    -ms-transition: all 0.3s ease-in-out;\n    -o-transition: all 0.3s ease-in-out;\n    transition: all 0.3s ease-in-out;\n    font-family: \"Montserrat\", arial, sans-serif;\n    padding: 8px 16px;\n\n    & .svg-inline--fa {\n      margin-right: 5px;\n      position: relative;\n      top: -2px;\n      display: inline-block;\n      font-size: inherit;\n      height: 1em;\n      vertical-align: -0.125em;\n    }\n  }\n\n  & .btn-cta-primary {\n    background: $primary_green;\n    border: 1px solid $primary_green;\n    color: $primary_white;\n    font-weight: 600;\n    text-transform: uppercase;\n  }\n}\n",
+                    "data": "@import \"../common/colors\";\n@import \"../common/styles\";\n\n.header {\n  padding: 30px 0;\n  background: $secondary_white;\n  border-top: 10px solid $primary_gray;\n\n  @include media-breakpoint-up(md) {\n    & .profile-image {\n      margin-right: 30px;\n    }\n  }\n\n  & img {\n    vertical-align: middle;\n    border-style: none;\n    border-radius: 50%;\n    border: 2px solid $primary_gray;\n    box-shadow:0px 0px 10px 10px $secondary_gray inset;\n    box-shadow:0px 2px 10px 2px $light_gray;\n  }\n\n  & .profile-content {\n    display: block;\n\n    & .name {\n      color: $secondary_gray;\n      font-size: 38px;\n      margin-bottom: 5px;\n      margin-top: 30px;\n    }\n\n    & .desc {\n      color: #778492;\n      font-family: \"Lato\", arial, sans-serif;\n      font-weight: 400;\n      font-size: 24px;\n      margin-top: 0;\n      margin-bottom: 15px;\n    }\n  }\n\n  & .social a {\n    background: $ternary_gray;\n    width: 36px;\n    height: 36px;\n    display: inline-block;\n    -webkit-border-radius: 50%;\n    -moz-border-radius: 50%;\n    -ms-border-radius: 50%;\n    -o-border-radius: 50%;\n    border-radius: 50%;\n    text-align: center;\n\n    & * {\n      color: $primary_white;\n    }\n\n    &:hover {\n      background: $primary_gray;\n    }\n\n    & .svg-inline--fa {\n      font-size: 20px;\n      margin-top: 5px;\n      display: inline-block;\n      height: 1em;\n    }\n  }\n\n  & a.btn {\n    -webkit-transition: all 0.3s ease-in-out;\n    -moz-transition: all 0.3s ease-in-out;\n    -ms-transition: all 0.3s ease-in-out;\n    -o-transition: all 0.3s ease-in-out;\n    transition: all 0.3s ease-in-out;\n    font-family: \"Montserrat\", arial, sans-serif;\n    padding: 8px 16px;\n\n    & .svg-inline--fa {\n      margin-right: 5px;\n      position: relative;\n      top: -2px;\n      display: inline-block;\n      font-size: inherit;\n      height: 1em;\n      vertical-align: -0.125em;\n    }\n  }\n\n  & .btn-cta-primary {\n    background: $primary_green;\n    border: 1px solid $primary_green;\n    color: $primary_white !important;\n    font-weight: 600;\n    text-transform: uppercase;\n\n    & * {\n      color: $primary_white;\n    }\n  }\n}\n",
                     "styleUrl": "./ps-header.component.scss"
                 }
             ],
@@ -324,13 +713,13 @@
         },
         {
             "name": "ComponentsModule",
-            "id": "module-ComponentsModule-1bc15f321fd0bc1c07f6e989521cf204d027a1ff967888ca2d3786c32c4709f41b4389de612761e4dee5db90f6a110ebe947d11235aad69c05cb5d280860c156",
+            "id": "module-ComponentsModule-be122a906ca90943d16e99655aeffef35a857866df3a6e5b8c8dad363dc63243ec8e5cd23d96163985e823f887ba1d4d99013515089cd515f7771f614272420b",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/components/src/lib/components.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\n\nimport { PsHeaderComponent } from './ps-header/ps-header.component';\nimport { PsFooterComponent } from './ps-footer/ps-footer.component';\nimport { CommonModule } from '@angular/common';\n\n@NgModule({\n  declarations: [PsHeaderComponent, PsFooterComponent],\n  imports: [CommonModule, FontAwesomeModule],\n  exports: [PsHeaderComponent, PsFooterComponent],\n})\nexport class ComponentsModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\n\nimport { PsHeaderComponent } from './ps-header/ps-header.component';\nimport { PsFooterComponent } from './ps-footer/ps-footer.component';\nimport { CommonModule } from '@angular/common';\nimport { PsContentTextComponent } from './ps-content-text/ps-content-text.component';\nimport { PsContentTextListComponent } from './ps-content-text-list/ps-content-text-list.component';\nimport { PsContentCarouselComponent } from './ps-content-carousel/ps-content-carousel.component';\nimport { PsContentFeatureProjectsComponent } from './ps-content-feature-projects/ps-content-feature-projects.component';\nimport { PsContentOtherProjectsComponent } from './ps-content-other-projects/ps-content-other-projects.component';\nimport { PsContentSkillsComponent } from './ps-content-skills/ps-content-skills.component';\n\n@NgModule({\n  declarations: [\n    PsHeaderComponent,\n    PsFooterComponent,\n    PsContentTextComponent,\n    PsContentTextListComponent,\n    PsContentCarouselComponent,\n    PsContentFeatureProjectsComponent,\n    PsContentOtherProjectsComponent,\n    PsContentSkillsComponent,\n  ],\n  imports: [CommonModule, FontAwesomeModule],\n  exports: [\n    PsHeaderComponent,\n    PsFooterComponent,\n    PsContentTextComponent,\n    PsContentTextListComponent,\n    PsContentCarouselComponent,\n    PsContentFeatureProjectsComponent,\n    PsContentOtherProjectsComponent,\n    PsContentSkillsComponent,\n  ],\n})\nexport class ComponentsModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -339,6 +728,24 @@
                 {
                     "type": "declarations",
                     "elements": [
+                        {
+                            "name": "PsContentCarouselComponent"
+                        },
+                        {
+                            "name": "PsContentFeatureProjectsComponent"
+                        },
+                        {
+                            "name": "PsContentOtherProjectsComponent"
+                        },
+                        {
+                            "name": "PsContentSkillsComponent"
+                        },
+                        {
+                            "name": "PsContentTextComponent"
+                        },
+                        {
+                            "name": "PsContentTextListComponent"
+                        },
                         {
                             "name": "PsFooterComponent"
                         },
@@ -354,6 +761,24 @@
                 {
                     "type": "exports",
                     "elements": [
+                        {
+                            "name": "PsContentCarouselComponent"
+                        },
+                        {
+                            "name": "PsContentFeatureProjectsComponent"
+                        },
+                        {
+                            "name": "PsContentOtherProjectsComponent"
+                        },
+                        {
+                            "name": "PsContentSkillsComponent"
+                        },
+                        {
+                            "name": "PsContentTextComponent"
+                        },
+                        {
+                            "name": "PsContentTextListComponent"
+                        },
                         {
                             "name": "PsFooterComponent"
                         },
@@ -406,6 +831,16 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
+                "name": "psContentText",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "demo/src/stories/PsContentText.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "psHeader",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -423,6 +858,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "demo/src/stories/PsContentText.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<PsContentTextComponent>",
+                "defaultValue": "(\n  args: PsContentTextComponent\n) => ({\n  component: PsContentTextComponent,\n  template: `\n  <rs-components-ps-content-text\n    [sectionTitle]=\"sectionTitle\"\n    [contentText]=\"contentText\">\n  </rs-components-ps-content-text>\n  `,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -494,6 +939,28 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "demo/src/stories/PsContentText.stories.ts": [
+                {
+                    "name": "psContentText",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "demo/src/stories/PsContentText.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "demo/src/stories/PsContentText.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<PsContentTextComponent>",
+                    "defaultValue": "(\n  args: PsContentTextComponent\n) => ({\n  component: PsContentTextComponent,\n  template: `\n  <rs-components-ps-content-text\n    [sectionTitle]=\"sectionTitle\"\n    [contentText]=\"contentText\">\n  </rs-components-ps-content-text>\n  `,\n  props: args,\n})"
                 }
             ],
             "demo/src/stories/PsHeader.stories.ts": [
@@ -585,6 +1052,26 @@
                 "status": "low"
             },
             {
+                "filePath": "demo/src/stories/PsContentText.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "psContentText",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "demo/src/stories/PsContentText.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "demo/src/stories/PsHeader.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -602,6 +1089,60 @@
                 "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/ps-content-carousel/ps-content-carousel.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsContentCarouselComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/ps-content-feature-projects/ps-content-feature-projects.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsContentFeatureProjectsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/ps-content-other-projects/ps-content-other-projects.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsContentOtherProjectsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/ps-content-skills/ps-content-skills.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsContentSkillsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/ps-content-text-list/ps-content-text-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsContentTextListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/components/src/lib/ps-content-text/ps-content-text.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsContentTextComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
