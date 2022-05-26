@@ -1,1 +1,22 @@
-<p>ps-content-text-list works!</p>
+<section class="section {{ sectionType }}">
+  <div class="section-inner">
+    <h2 class="heading">{{ sectionTitle }}</h2>
+    <div class="content">
+      <ul class="list-unstyled">
+        <li *ngFor="let item of listItems">
+          <div class="row">
+            <div class="col-2 m-0 p-0 text-center">
+              <fa-icon class="svg-inline--fa" [icon]="item.icon"></fa-icon>
+            </div>
+            <div class="col-10 p-0">
+              <a *ngIf="item.url; else planeText" [href]="item.url">{{
+                item.text
+              }}</a>
+              <ng-template #planeText>{{ item.text }}</ng-template>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

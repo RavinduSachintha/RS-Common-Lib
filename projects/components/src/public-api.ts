@@ -12,3 +12,5 @@ export * from './lib/ps-content-other-projects/ps-content-other-projects.compone
 export * from './lib/ps-content-skills/ps-content-skills.component';
 export * from './lib/ps-content-text/ps-content-text.component';
 export * from './lib/ps-content-text-list/ps-content-text-list.component';
+export * from './lib/ps-content-text-list/ps-content-text-list-types.enum';
+export * from './lib/ps-content-text-list/ps-text-list-item.type';

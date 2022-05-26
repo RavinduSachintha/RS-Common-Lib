@@ -1,0 +1,16 @@
+@import "../common/index";
+
+.section {
+  & .content {
+    color: #434343;
+  }
+
+  & .svg-inline--fa {
+    color: #ccd1d6;
+  }
+
+  & a:hover {
+    text-decoration: underline !important;
+    color: #3aaa64;
+  }
+}

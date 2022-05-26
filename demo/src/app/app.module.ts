@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 
 import { ComponentsModule } from '@ravindusachintha/rs-ng-components';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

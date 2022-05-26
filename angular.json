@@ -57,7 +57,10 @@
             "polyfills": "demo/src/polyfills.ts",
             "inlineStyleLanguage": "scss",
             "assets": ["demo/src/favicon.ico", "demo/src/assets"],
-            "styles": ["demo/src/styles.scss"],
+            "styles": [
+              "demo/src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss"
+            ],
             "scripts": [],
             "baseHref": "/RS-Common-Lib/",
             "preserveSymlinks": true

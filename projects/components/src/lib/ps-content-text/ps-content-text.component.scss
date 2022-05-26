@@ -1,2 +1,7 @@
-@import "../common/colors";
-@import "../common/styles";
+@import "../common/index";
+
+.section {
+  & .content {
+    color: #434343;
+  }
+}

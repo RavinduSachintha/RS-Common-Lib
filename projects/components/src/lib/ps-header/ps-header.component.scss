@@ -1,10 +1,10 @@
-@import "../common/colors";
-@import "../common/styles";
+@import "../common/index";
 
 .header {
   padding: 30px 0;
   background: $secondary_white;
   border-top: 10px solid $primary_gray;
+  box-shadow:0px 2px 20px 2px $light_gray;
 
   @include media-breakpoint-up(md) {
     & .profile-image {
@@ -29,6 +29,7 @@
       font-size: 38px;
       margin-bottom: 5px;
       margin-top: 30px;
+      font-weight: 700;
     }
 
     & .desc {
@@ -53,19 +54,16 @@
     border-radius: 50%;
     text-align: center;
 
-    & * {
-      color: $primary_white;
-    }
-
     &:hover {
       background: $primary_gray;
     }
 
     & .svg-inline--fa {
       font-size: 20px;
-      margin-top: 5px;
+      margin-top: 2px;
       display: inline-block;
       height: 1em;
+      color: $primary_white !important;
     }
   }
 
@@ -98,6 +96,10 @@
 
     & * {
       color: $primary_white;
+    }
+
+    &:hover {
+      box-shadow:0px 2px 10px 2px $light_gray;
     }
   }
 }
